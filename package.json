@@ -6,7 +6,7 @@
     { "name": "Horaci Cuevas", "email": "horaci@forward.co.uk" }
   ],
   "description": "A node module for accessing Hadoop's file system (HDFS)",
-  "scripts": { "preinstall": "node-waf configure build" },
+  "scripts": { "preinstall": "node-gyp configure build" },
   "main": "./node-hdfs",
   "engines": { "node": ">0.4.0" },
   "keywords": [ "hdfs", "hadoop", "fs", "libhdfs" ],
