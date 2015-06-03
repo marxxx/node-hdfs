@@ -9,7 +9,7 @@ export CLASSPATH=$(for i in $HADOOP_HOME/hadoop-core*.jar ; do echo -n $i: ; don
 # Add conf path where core-site.xml is
 export CLASSPATH=$CLASSPATH:./conf
 
-node-waf clean
-node-waf configure
-node-waf build 
+node-gyp clean
+node-gyp configure
+node-gyp build 
 node demo/demo.js
